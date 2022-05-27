@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modal Form</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles_main.css" />
+    <link rel="stylesheet" href="./styles_for_modal.css" />
   </head>
   <body>
     <!-- according video,   -->
@@ -16,14 +17,18 @@
       >
     </div>
     <p>
-      JS isn't good enough, b/c clicking is working everything!!!, just take
+      JS isn't good enough, b/c clicking is working everything, but should only
+      in backrop, when it is opened (when backdrop has closed, by clucking in a
+      some of the form, when clicking on close btn e.t.c.)!!!, just take
       attention for practice
     </p>
 
-    <!-- Simple opening modal markup -->
-    <button id="modalBtn" class="button">Open Modal</button>
+    <!-- Simple modal markup -->
+    <!-- <button id="modalBtn" class="button">Open Modal</button> -->
+    <button id="backdropBtn" class="button">Open Modal</button>
 
-    <div id="simpleModal" class="modal">
+    <!-- <div id="simpleModal" class="modal"> -->
+    <div id="simpleBackdrop" class="backdrop">
       <div class="modal-content">
         <span class="closeBtn">&times;</span>
         <p>Hello... I am a modal :)</p>
